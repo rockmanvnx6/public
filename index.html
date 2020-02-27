@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auspham | Public key</title>
+    <link rel="icon" href="https://auspham.dev/icons/icon-48x48.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="manifest" href="https://auspham.dev/manifest.webmanifest"/>
+    <meta name="theme-color" content="#663399"/>
+    <link rel="apple-touch-icon" sizes="48x48" href="https://auspham.dev/icons/icon-48x48.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://auspham.dev/icons/icon-72x72.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="apple-touch-icon" sizes="96x96" href="https://auspham.dev/icons/icon-96x96.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://auspham.dev/icons/icon-144x144.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="https://auspham.dev/icons/icon-192x192.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="apple-touch-icon" sizes="256x256" href="https://auspham.dev/icons/icon-256x256.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="apple-touch-icon" sizes="384x384" href="https://auspham.dev/icons/icon-384x384.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="apple-touch-icon" sizes="512x512" href="https://auspham.dev/icons/icon-512x512.png?v=49fbd3508797dfada3d615f6d32c3911"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<body>
+
+
+    <p id="display"></p>
+    <div class="links">
+        <a href="https://auspham.dev/">
+            Home
+        </a>
+    </div>
+
+
+    <script>
+        const LINK = 'https://gist.githubusercontent.com/rockmanvnx6/c587e16ccfb084637e71219a2c29b24c/raw/ec3f91cfdb57151ca7eec7fe30ebb4a0994f456e/id_rsa.pub';
+        fetch(LINK).then(res => res.text()).then(data => document.getElementById('display').innerHTML = data);
+    </script>
+
+</body>
+</html>
