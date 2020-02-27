@@ -5,7 +5,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     font-stretch: 0%;
     vertical-align: baseline
@@ -33,26 +32,6 @@ html,body {
     font-family: "Courier New", serif;
     padding: 30px;
 }
-
-a {
-    color: #222;
-    text-decoration: none;
-    transition: color 250ms linear;
-}
-
-a:hover {
-    color: #000;
-    border-bottom: solid 1px #000;
-    transition: color 100ms linear
-}
-
-
-.links {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
 
 
 @media(max-width:768px) {
